@@ -27,3 +27,15 @@ for(var i=0; i<urls.length; i++){
 }
 
 
+// h4 callback
+function havingBreakfast (food, drink, callback) {
+	console.log('Having breakfast of ' + food + ', ' + drink);
+	if(callback && typeof(callback)==='function'){
+		callback();
+	}
+}
+havingBreakfast('toast', 'coffee', function(){
+	console.log('Finished breakfast. Now time to go to work!');
+})
+
+
