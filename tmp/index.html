@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tag Cloud</title>
+    <link rel="stylesheet" type="text/css" href="jqcloud.css">
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.js"></script>
+    <script type="text/javascript" src="jqcloud-1.0.4.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <button id="toggleView" style="float:left;margin-top:20px;margin-left:50px;color:white;background-color:black; padding:10px; font-size:15px">Toggle View</button>
+    <div style="padding-top:20px;padding-left:300px;font-family:arial;color:black;font-size:200%" id="cloud_title">Tag Cloud on Tweets Controversial Rate</div>
+    <div id="tag_cloud_rate" style="width: 1500px; height: 700px;">
+    </div>
+    <div id="tag_cloud_tweets" style="display:none; width: 1500px; height: 700px;"></div>
+    <div id="tag_info" style="display:none">
+      <div id="tag_head" style="text-align:center">
+      <h2>Hashtag Name: <span id="tagName"></span> / Controversial Rate: <span id="conRate"></span></h2>
+      </div>
+      <div id="googleMap" style="width:1200px;height:600px;margin-left: auto; margin-right: auto;">
+      </div>
+      <div id="tag_body">
+      </div>
+    </div>
+  </body>
+</html>
